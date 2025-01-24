@@ -1,0 +1,62 @@
+/* Styling for sortable table headers */
+th {
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+  }
+  
+  th.sortable:hover {
+    background-color: #f2f2f2;
+  }
+  
+  th .ascending::after {
+    content: " ▲";
+    color: #4caf50;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+  }
+  
+  th .descending::after {
+    content: " ▼";
+    color: #f44336;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+  }
+  
+  th .sortable::after {
+    content: " ▲▼";
+    color: #ccc;
+    font-size: 12px;
+    position: absolute;
+    right: 5px;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
